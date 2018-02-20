@@ -4,6 +4,7 @@ Visualization global weather patterns by latitude
 
 ## Summary
 Deployed Summary: [Weather By Latitude](https://mmclaughlin87.github.io/weather-by-latitude-visualization/ "Weather By Latitude")
+
 An analysis of weather patterns using python, the OpenWeatherMap API, and citypy to visualize trends in temperature, humidity, cloudiness, and windyness by latitude
 
 ## Analysis
