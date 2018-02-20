@@ -1,7 +1,12 @@
 
-# WeatherPy
+# Weather By Latitude
+Visualization global weather patterns by latitude
 
-Analysis
+## Summary
+Deployed Summary: [Weather By Latitude](https://mmclaughlin87.github.io/weather-by-latitude-visualization/ "Weather By Latitude")
+An analysis of weather patterns using python, the OpenWeatherMap API, and citypy to visualize trends in temperature, humidity, cloudiness, and windyness by latitude
+
+## Analysis
 - Average temperature generally increases the closer a location is to the equator
 - The variance of temperature ranges appears to increase the further a location is from the equator. Average temperatures for locations within ~5 degrees of the equator only vary by about 20 degrees Fahrenheit, while temperatures around 70 degress latitude vary from about -30 degrees to 35 degress Fahrenheit.
 - Their are not strongly discernable trends between latitude and humidity, cloudiness, and windiness. However there may be a loose correlation between increased humidity at higher latitudes and increased windiness further from the equator.
@@ -21,7 +26,7 @@ from config import owm_api_key
 plt.style.use('seaborn')
 ```
 
-# Generate List of Cities
+## Generate List of Cities
 
 
 ```python
@@ -143,7 +148,7 @@ cities.head()
 
 
 
-# Perform API Calls to OpenWeatherMap
+## Perform API Calls to OpenWeatherMap
 
 
 ```python
@@ -1168,7 +1173,7 @@ for index, row in cities.iterrows():
     http://api.openweathermap.org/data/2.5/forecast?q=skagen,dk&units=imperial&appid=***
     
 
-# Add Results into Dataset
+## Add Results into Dataset
 
 
 ```python
@@ -1420,14 +1425,14 @@ cities.head()
 
 
 
-# Save Results as CSV
+## Save Results as CSV
 
 
 ```python
 cities.to_csv("weather_data.csv", index=False, header=True)
 ```
 
-# Plot Temperature vs. Latitude
+## Plot Temperature vs. Latitude
 
 
 ```python
@@ -1443,7 +1448,7 @@ plt.show()
 ![png](output_12_0.png)
 
 
-# Plot Humidity vs. Latitude
+## Plot Humidity vs. Latitude
 
 
 ```python
@@ -1460,7 +1465,7 @@ plt.show()
 ![png](output_14_0.png)
 
 
-# Plot Cloudiness vs. Latitude
+## Plot Cloudiness vs. Latitude
 
 
 ```python
@@ -1477,7 +1482,7 @@ plt.show()
 ![png](output_16_0.png)
 
 
-# Plot Windiness vs. Latitude
+## Plot Windiness vs. Latitude
 
 
 ```python
